@@ -1,0 +1,1094 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Indie Flower', cursive;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  text-shadow: 2px 2px 2px lightgray;
+}
+
+a:hover{
+   color: black;
+   cursor: pointer;
+}
+
+li{
+   list-style-type: none;
+   margin: 5px;
+   padding: 5px;
+   border-radius: 5px;
+}
+
+li:hover{
+   background-color: violet;
+}
+
+.imagen_logo{
+width: 40%;
+height: auto;
+border-radius: 20px;
+}
+
+
+ul{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
+
+}
+
+ .redes{
+  padding-top: 12px;
+  width: 40px;
+  height: 40px;
+ }
+
+.titulo__bienvenida{
+  display: flex;
+  justify-content: center;
+  text-shadow: 1px 1px 2px white rgb(102, 102, 102);
+}
+
+.titulo_secundario{
+  display: flex;
+  flex-direction: row;
+  flex - wrap: wrap;
+  justify-content: space-between;
+  font-size: 25px;
+  padding: 30px;
+  margin: 20px;
+  width: auto;
+ }
+
+.titulo3{
+  font-size: 25px;
+  color: white;
+  text-shadow: 1px 1px 2px hotpink; rgb(102, 102, 102);
+  font-weight: bold;
+  padding-top: 3%;
+ }
+
+.titulo4{
+  font-size: 18px;
+  color: white;
+}
+
+.titulo5{
+   font-size: 18px;
+   color: gray;
+   height: 40%;
+   width:auto;
+   font-weight: bold;
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+   text-shadow: 1px 1px 1px black;
+   }
+
+.parrafo{
+text-align: justify;
+}
+
+
+.button{
+   border: 0px;
+   background-color: blueviolet;
+   padding: 1rem;
+   border-radius: 30px;
+   margin-left: 45%;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+
+.button2{
+
+ 
+   width: 50%;
+   margin: 2% 5%;
+   margin-left: 20%;
+   align-items: center;
+   border: 0px;
+   background-color: skyblue;
+   border-radius: 30px;
+   color: black;
+   font-weight: bold;
+   font-size: 18px;
+   cursor: pointer;
+   transition: width 3s;
+   }
+
+   .button2:hover{
+      width: 60%;
+      background-color: purple;
+      color: white;
+   }
+
+
+
+
+/*container de index.html*/
+.container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 100px 550px 300px 400px 100px;
+grid-auto-flow: row;
+grid-auto-columns: 1fr;
+grid-template-areas: 
+"header header"
+"tituloencabezado tituloencabezado"
+"sectionB sectionB"
+"sectionC sectionD"
+"foo foo";
+width: 100%;
+height: 100%;
+}
+
+.header{
+   grid-area: header;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 5rem;
+   background-image: url("https://media.istockphoto.com/photos/colorful-balls-of-yarn-and-ribbons-picture-id592008326");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.tituloencabezado{
+  grid-area: tituloencabezado;
+  background-image:url(../assets/images/montanacolores.jpg);
+  height: 550px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+
+.sectionB{
+grid-area: sectionB;
+padding: 10% 10%;
+margin: 0% 0%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #35589A;
+}
+
+.sectionC{
+grid-area: sectionC;
+background-image: url("https://images.unsplash.com/photo-1531968455001-5c5272a41129?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Open Sans', sans-serif;
+}
+
+
+.sectionD{
+grid-area: sectionD;
+background-image: url("https://images.unsplash.com/photo-1534615098829-958121bcc188?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Footer*/
+.foo{
+   grid-area: foo;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center ;
+   align-items: center;
+   background-color: rgb(4, 41, 58);
+   text-align: center;
+   padding-bottom: 0px;
+}
+
+
+
+
+/*Container2 - noticia.html*/
+
+.container2{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 100px 60px 320px 320px 100px;
+grid-auto-flow: row;
+grid-auto-columns: 1fr;
+grid-template-areas: 
+"header2 header2"
+"tit1 tit1"
+"tit2 tit3"
+"tit5 tit4 "
+"foo2 foo2";
+width: 100%;
+height: 100%;
+/*grid-gap: 5px;*/
+}
+
+.header2{
+   grid-area: header2;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 5rem;
+   background-image: url("https://media.istockphoto.com/photos/colorful-balls-of-yarn-and-ribbons-picture-id592008326");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.tit1{
+   grid-area: tit1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+   color: white;
+   background-color: #464E2E;
+}
+
+.tit2{
+   grid-area: tit2;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.tit3{
+   grid-area: tit3;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   font-size: 20px;
+   padding-left: 5%;
+   color:  white;
+}
+
+.tit4{
+   grid-area: tit4;
+   display: flex;
+   justify-content: flex-start;
+}
+ 
+
+.tit5{
+   grid-area: tit5;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   font-size: 20px;
+   padding-left: 5%;
+   color:  white; 
+   padding-right: 5%;
+}
+
+
+  .foo2{
+   grid-area: foo2;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center ;
+   align-items: center;
+   background-color: rgb(4, 41, 58);
+   text-align: center;
+   padding-bottom: 0px;
+}
+
+
+
+/*Container3 para gastronomia.html*/
+
+.container3{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 100px 50px 320px 350px 100px;
+grid-auto-flow: row;
+grid-auto-columns: 1fr;
+grid-template-areas: 
+"header3 header3"
+"main_principal main_principal"
+"gastronomia1 ceviche"
+"brasa gastronomia2"
+"foo3 foo3";
+
+width: 100%;
+height: 100%;
+
+}
+
+.header3{
+   grid-area: header3;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 5rem;
+   background-image: url("https://media.istockphoto.com/photos/colorful-balls-of-yarn-and-ribbons-picture-id592008326");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.main_principal{
+grid-area: main_principal;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 25px;
+font-weight: bold;
+background-color: #362706;
+color: white;
+text-shadow: 1px 1px 1px lightpink;
+
+}
+
+.gastronomia1{
+grid-area: gastronomia1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 5%;
+
+}
+.ceviche{
+grid-area: ceviche;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://1.bp.blogspot.com/-lU2GshgWAUc/YP9PL66WdBI/AAAAAAAAONs/AY44ppmk1McqAsQfwvvsEfWLADKDcSvWQCLcBGAsYHQ/s800/Ceviche-Peruano.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+font-weight: bold;
+font-size: 20px;
+justify-content: center;
+
+
+}
+
+.brasa{
+grid-area: brasa;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://www.eatperu.com/wp-content/uploads/2019/10/pollo-a-la-brasa-with-salad-and-dipping-sauces.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+font-weight: bold;
+font-size: 20px;
+justify-content: center;
+}
+
+.gastronomia2{
+grid-area: gastronomia2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 5%;
+
+}
+.foo3{
+   grid-area: foo3;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center ;
+   align-items: center;
+   background-color: rgb(4, 41, 58);
+   text-align: center;
+   padding-bottom: 0px;
+}
+
+.main_principal, .gastronomia1, .gastronomia2, .ceviche, {
+background-color: gray;
+}
+
+
+
+/*Container4 para contacto.html*/
+
+.container4{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 100px 500px 500px 700px 50px 100px;
+grid-auto-flow: row;
+grid-auto-columns: 1fr;
+grid-template-areas: 
+"header4"
+"main"
+"formulario"
+"titulomaps"
+"ubicacion"
+"foo4";
+width: 100%;
+height: 100%;
+grid-gap: 5px;
+}
+
+
+.header4{
+   grid-area: header4;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 5rem;
+   background-image: url("https://media.istockphoto.com/photos/colorful-balls-of-yarn-and-ribbons-picture-id592008326");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.main{
+grid-area: main;
+display: flex;
+justify-content: center;
+text-align: center;
+background-image: url("https://images.unsplash.com/photo-1640622307877-1e40352b9a48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+background-repeat: no-repeat;
+height: 300px;
+background-size: cover;
+color: ghostwhite;
+
+}
+
+.formulario{
+grid-area: formulario;
+display: flex;
+flex-direction: column;
+padding: 5% 30%;
+}
+
+.titulomaps{
+   grid-area: titulomaps;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+}
+.ubicacion{
+grid-area: ubicacion;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.foo4{
+   grid-area: foo4;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center ;
+   align-items: center;
+   background-color: rgb(4, 41, 58);
+   text-align: center;
+   padding-bottom: 0px;
+}
+
+.textinput{
+            float: left;
+            width: 100%;
+            height: auto;
+}
+
+ .main, .formulario, .ubicacion, .titulomaps {background-color: #7897AB;}
+
+
+
+.container5{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 100px 200px 300px 300px 300px 300px 300px 100px;
+grid-auto-flow: row;
+grid-auto-columns: 1fr;
+grid-template-areas: 
+"header5 header5 header5 header5 header5 header5"
+"titulofp titulofp titulofp titulofp titulofp titulofp"
+"img1 img1 img2 img2 img3 img3"
+"img4 img4 img4 img5 img5 img5"
+"img6 img6 img7 img7 img8 img8"
+"img9 img9 img9 img10 img10 img10"
+"img11 img11 img11 img11 img11 img11"
+"foo5 foo5 foo5 foo5 foo5 foo5";
+width: 100%;
+height: 100%;
+grid-gap: 10px;
+}
+
+.header5{
+   grid-area: header5;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 5rem;
+   background-image: url("https://media.istockphoto.com/photos/colorful-balls-of-yarn-and-ribbons-picture-id592008326");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.titulofp{
+grid-area: titulofp;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url("https://media.istockphoto.com/photos/pastel-sunset-over-the-ocean-in-a-cloudy-sky-picture-id154208318?k=20&m=154208318&s=612x612&w=0&h=658qBI8GTiNWNgp1cfaf5MdHZ1v0c4syJpnALshxu2U=");
+background-size: cover;
+color: lightgray;
+text-shadow: 2px 2px 2px black;
+font-weight: bold;
+font-size: 18px;
+}
+
+.img1{
+grid-area: img1;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://photo980x880.mnstatic.com/73bb1e923dca115345a792943088cbb6/reserva-natural-de-paracas-5807851.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+font-weight: bold;
+font-size: 20px;
+justify-content: center;
+}
+
+.img2{
+grid-area:img2;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://imgs-akamai.mnstatic.com/83/41/83413e97e6e364bc6f6e18844fc9fcc2.jpg?quality=75&format=pjpg&height=300&fit=bounds");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.img3{
+grid-area:img3;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://imgs-akamai.mnstatic.com/7b/7b/7b7b8105fdddec09634d5e4f326cde09.jpg?quality=75&format=pjpg&height=300&fit=bounds");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.img4{
+grid-area:img4;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://cdn.pixabay.com/photo/2017/07/23/20/10/peru-2532604__340.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.img5{
+grid-area:img5;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://cdn.pixabay.com/photo/2012/02/23/09/14/island-15957__340.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.img6{
+grid-area:img6;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://imgs-akamai.mnstatic.com/cf/1b/cf1b0e9846891e8a292c6a60693879ab.jpg?quality=75&format=pjpg&height=300&fit=bounds");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.img7{
+grid-area: img7;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://imgs-akamai.mnstatic.com/cf/98/cf98e688583432d5a65ba6f45e403eb9.jpg?quality=75&format=pjpg&height=300&fit=bounds");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.img8{
+grid-area:img8;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://imgs-akamai.mnstatic.com/cc/16/cc16186e9d38e1bd7e49ffc4cdfec27b.jpg?quality=75&format=pjpg&height=300&fit=bounds");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.img9{
+grid-area:img9;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url("https://cdn.pixabay.com/photo/2020/10/23/16/43/vicuna-5679264__340.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.img10{
+grid-area:img10;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url(https://cdn.pixabay.com/photo/2016/02/03/18/41/peru-1177687__340.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.img11{
+grid-area: img11;
+display: flex;
+width: 100%;
+height: auto;
+background-image: url(https://cdn.pixabay.com/photo/2017/04/02/23/24/machu-picchu-2197157__340.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.foo5{
+   grid-area: foo5;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center ;
+   align-items: center;
+   background-color: rgb(4, 41, 58);
+   text-align: center;
+   padding-bottom: 0px;}
+
+
+/* -----------------Medidas query para index.html---------------------------------*/
+
+
+@media(max-width: 768px){
+
+   .container{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 300px 520px 500px 500px 500px 100px;
+   grid-auto-flow: rows;
+   grid-auto-columns: 1fr;
+   grid-template-areas: 
+   "header "
+   "tituloencabezado "
+   "sectionB "
+   "sectionC" 
+   "sectionD"
+   "foo";
+   width: 100%;
+   height: 100%;
+   }
+
+   .imagen_logo{
+   width: 70%;
+   height: auto;
+   border-radius: 20px;
+   }
+
+
+   .parrafo{
+   text-align: justify;
+   font-size: 18px;
+   }
+
+
+.button{
+   display: flex;
+   align-items: flex-start;
+   height: 50px;
+   border: 0px;
+   background-color: skyblue;
+   border-radius: 30px;
+   margin-left: 40%;
+   color: black;
+   font-weight: bold;
+   font-size: 18px;
+   cursor: pointer;
+   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+.container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 100px 550px 300px 400px 100px;
+grid-auto-flow: row;
+grid-auto-columns: 1fr;
+grid-template-areas: 
+"header header"
+"tituloencabezado tituloencabezado"
+"sectionB sectionB"
+"sectionC sectionD"
+"foo foo";
+width: 100%;
+height: 100%;
+}
+
+.sectionB{
+grid-area: sectionB;
+padding: 5% 5%;
+margin: 0% 0%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #398AB9;
+font-size: 12px;
+}
+
+
+
+}
+
+
+@media only screen and (min-width: 1024px){
+
+   .container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100px 550px 300px 400px 100px;
+   grid-auto-flow: row;
+   grid-auto-columns: 1fr;
+   grid-template-areas: 
+   "header header"
+   "tituloencabezado tituloencabezado"
+   "sectionB sectionB"
+   "sectionC sectionD"
+   "foo foo";
+   width: 100%;
+   height: 100%;
+   }
+}
+
+
+
+/* -----------------Medidas query para noticias.html---------------------------------*/
+
+@media(max-width: 768px){
+
+  .container2 {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 100px 50px 100px 320px 100px 320px 100px;
+   grid-auto-flow: row;
+   grid-auto-columns: 1fr;
+   grid-template-areas: 
+   "header2"
+   "tit1 "
+   "tit3"
+   "tit2"
+   "tit5"
+   "tit4" 
+   "foo2";
+   width: 100%;
+   height: 100%;
+   /*grid-gap: 5px;*/
+   }
+
+   .header2{
+   grid-area: header2;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 5rem;
+   background-image: url("https://media.istockphoto.com/photos/colorful-balls-of-yarn-and-ribbons-picture-id592008326");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.tit1{
+   grid-area: tit1;
+   display: flex;
+   justify-content: center;
+   font-size: 25px;
+   color: white;
+   background-color: #F76E11;
+}
+
+.tit2{
+   grid-area: tit2;
+   background-color: #FF9F45;
+    align-items: center;
+   justify-content: center;
+}
+
+.tit3{
+   grid-area: tit3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   color:  white;
+   background-color: #FF9F45;
+
+}
+
+.tit4{
+   grid-area: tit4;
+   background-color: #FF9F45;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+.tit5{
+   grid-area: tit5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   color:  white;
+   background-color: #FF9F45;
+   }
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+
+.container2{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 100px 50px 320px 320px 100px;
+grid-auto-flow: row;
+grid-auto-columns: 1fr;
+grid-template-areas: 
+"header2 header2"
+"tit1 tit1"
+"tit2 tit3"
+"tit5 tit4 "
+"foo2 foo2";
+width: 100%;
+height: 100%;
+/*grid-gap: 5px;*/
+}
+
+.header2{
+   grid-area: header2;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 5rem;
+   background-image: url("https://media.istockphoto.com/photos/colorful-balls-of-yarn-and-ribbons-picture-id592008326");
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+
+   .tit2, .tit3, .tit4, .tit5 {
+   background-color: #A1B57D;
+   }
+
+}
+
+
+@media only screen and (min-width: 1024px){
+
+.container2{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 100px 50px 320px 320px 100px;
+grid-auto-flow: row;
+grid-auto-columns: 1fr;
+grid-template-areas: 
+"header2 header2"
+"tit1 tit1"
+"tit2 tit3"
+"tit5 tit4 "
+"foo2 foo2";
+width: 100%;
+height: 100%;
+/*grid-gap: 5px;*/
+}
+
+
+   .tit2, .tit3, .tit4, .tit5 {
+   background-color: #FF9F45;
+   }
+
+}
+
+/* -----------------Medidas query para gastronomia.html---------------------------------*/
+
+@media(max-width: 768px){
+
+   .container3{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 100px 50px 250px 300px 300px 300px 100px;
+   grid-auto-flow: row;
+   grid-auto-columns: 1fr;
+   grid-template-areas: 
+   "header3"
+   "main_principal"
+   "gastronomia1"
+   "ceviche"
+   "gastronomia2"
+   "brasa"
+   "foo3";
+   width: 100%;
+   height: 100%;
+ 
+   }
+
+   .main_principal{
+      background-color: #ACB992;
+      color: black;
+      font-size: 20px;
+   }
+
+   .gastronomia1{
+      background-color: #D8D2CB;
+   }
+
+   .gastronomia2{
+      background-color: #D8D2CB;
+   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px){
+
+   .container3{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100px 50px 320px 350px 100px;
+   grid-auto-flow: row;
+   grid-auto-columns: 1fr;
+   grid-template-areas: 
+   "header3 header3"
+   "main_principal main_principal"
+   "gastronomia1 ceviche"
+   "brasa gastronomia2"
+   "foo3 foo3";
+   width: 100%;
+   height: 100%;
+   }
+
+   .main_principal{
+      background-color: #495371;
+   }
+
+   .gastronomia1{
+      background-color: #98B4AA;
+   }
+   .gastronomia2{
+      background-color: #98B4AA;
+   }
+
+}
+
+@media only screen and (min-width: 1024px){
+  .container3{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100px 50px 320px 350px 100px;
+   grid-auto-flow: row;
+   grid-auto-columns: 1fr;
+   grid-template-areas: 
+   "header3 header3"
+   "main_principal main_principal"
+   "gastronomia1 ceviche"
+   "brasa gastronomia2"
+   "foo3 foo3";
+   width: 100%;
+   height: 100%;
+   }
+
+}
+/* -----------------Medidas query para contacto.html---------------------------------*/
+@media(max-width: 768px){
+   .container4{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 100px 500px 500px 700px 50px 100px;
+   grid-auto-flow: row;
+   grid-auto-columns: 1fr;
+   grid-template-areas: 
+   "header4"
+   "main"
+   "formulario"
+   "titulomaps"
+   "ubicacion"
+   "foo4";
+   width: 100%;
+   height: 100%;
+   grid-gap: 5px;
+   }
+   .imagen_logo{
+   width: 70%;
+   height: auto;
+   border-radius: 20px;
+   }
+
+}
+
+
+/* -----------------Medidas query para fotos.html---------------------------------*/
+
+@media(max-width: 768px){
+   .container5{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 100px 200px 300px 300px 300px 300px 300px 300px 300px 300px 100px;
+   grid-auto-flow: row;
+   grid-auto-columns: 1fr;
+   grid-template-areas: 
+   "header5 header5"
+   "titulofp titulofp "
+   "img1 img2"
+   "img4 img4"
+   "img5 img5"
+   "img3 img6"
+   "img7 img8"
+   "img9 img9"
+   "img10 img10"
+   "img11 img11"
+   "foo5 foo5";
+   width: 100%;
+   height: 100%;
+   grid-gap: 10px;
+   }
+
+   a{
+    font-size: 18px; }
+
+.header5{
+   grid-area: header5;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 5rem;
+   background-image: url("https://media.istockphoto.com/photos/colorful-balls-of-yarn-and-ribbons-picture-id592008326");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+}
