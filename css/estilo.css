@@ -113,8 +113,7 @@ text-align: justify;
 
  
    width: 50%;
-   margin: 2% 5%;
-   margin-left: 20%;
+   margin: 2% f4%;
    align-items: center;
    border: 0px;
    background-color: skyblue;
@@ -132,7 +131,27 @@ text-align: justify;
       color: white;
    }
 
+   input:not([type="radio"], [type="button"], [type="checkbox"]) {
+      width: 300px;
+      height:20px;
+      transform: all 2s;
+      background-color: lightgray;
 
+   }
+
+   input:not([type="radio"],[type="checkbox"] ):focus{
+      width: 350px;
+      height: 25px;
+      font-size: 25px;
+      background-color: whitesmoke;
+   }
+
+
+   label{
+      font-size: 20px;
+      font-weight: bold;
+
+   }
 
 
 /*container de index.html*/
@@ -355,6 +374,7 @@ background-color: #362706;
 color: white;
 text-shadow: 1px 1px 1px lightpink;
 
+
 }
 
 .gastronomia1{
@@ -470,7 +490,7 @@ color: ghostwhite;
 grid-area: formulario;
 display: flex;
 flex-direction: column;
-padding: 5% 30%;
+padding: 5% 35%;
 }
 
 .titulomaps{
@@ -502,7 +522,7 @@ align-items: center;
 
 .textinput{
             float: left;
-            width: 100%;
+            width: 65%;
             height: auto;
 }
 
@@ -683,6 +703,7 @@ background-size: cover;
    padding-bottom: 0px;}
 
 
+
 /* -----------------Medidas query para index.html---------------------------------*/
 
 
@@ -772,7 +793,7 @@ font-size: 12px;
    .container{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 200px 550px 300px 400px 100px;
+   grid-template-rows: 100px 550px 300px 400px 100px;
    grid-auto-flow: row;
    grid-auto-columns: 1fr;
    grid-template-areas: 
@@ -962,7 +983,7 @@ height: 100%;
       background-color: #ACB992;
       color: black;
       font-size: 20px;
-   }
+         }
 
    .gastronomia1{
       background-color: #D8D2CB;
@@ -993,7 +1014,7 @@ height: 100%;
 
    .main_principal{
       background-color: #495371;
-   }
+    }
 
    .gastronomia1{
       background-color: #98B4AA;
