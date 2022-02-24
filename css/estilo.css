@@ -691,7 +691,7 @@ background-size: cover;
    .container{
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 300px 520px 500px 500px 500px 100px;
+   grid-template-rows: 200px 520px 500px 500px 500px 100px;
    grid-auto-flow: rows;
    grid-auto-columns: 1fr;
    grid-template-areas: 
@@ -737,7 +737,7 @@ background-size: cover;
 .container{
 display: grid;
 grid-template-columns: 1fr 1fr;
-grid-template-rows: 100px 550px 300px 400px 100px;
+grid-template-rows: 200px 550px 300px 400px 100px;
 grid-auto-flow: row;
 grid-auto-columns: 1fr;
 grid-template-areas: 
@@ -772,7 +772,7 @@ font-size: 12px;
    .container{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 100px 550px 300px 400px 100px;
+   grid-template-rows: 200px 550px 300px 400px 100px;
    grid-auto-flow: row;
    grid-auto-columns: 1fr;
    grid-template-areas: 
@@ -795,7 +795,7 @@ font-size: 12px;
   .container2 {
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 100px 50px 100px 320px 100px 320px 100px;
+   grid-template-rows: 200px 50px 100px 320px 100px 320px 100px;
    grid-auto-flow: row;
    grid-auto-columns: 1fr;
    grid-template-areas: 
@@ -942,7 +942,7 @@ height: 100%;
    .container3{
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 100px 50px 250px 300px 300px 300px 100px;
+   grid-template-rows: 200px 50px 250px 300px 300px 300px 100px;
    grid-auto-flow: row;
    grid-auto-columns: 1fr;
    grid-template-areas: 
@@ -1027,7 +1027,7 @@ height: 100%;
    .container4{
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: 100px 500px 500px 700px 50px 100px;
+   grid-template-rows: 200px 500px 500px 700px 50px 100px;
    grid-auto-flow: row;
    grid-auto-columns: 1fr;
    grid-template-areas: 
@@ -1056,7 +1056,7 @@ height: 100%;
    .container5{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   grid-template-rows: 100px 200px 300px 300px 300px 300px 300px 300px 300px 300px 100px;
+   grid-template-rows: 200px 200px 300px 300px 300px 300px 300px 300px 300px 300px 100px;
    grid-auto-flow: row;
    grid-auto-columns: 1fr;
    grid-template-areas: 
